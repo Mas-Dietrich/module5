@@ -91,7 +91,7 @@ nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {background-color: $primaryColor;}
 
-nav ul li.active a {background-color: #000; color:#fff;}
+nav ul li.active a {background-color: $primaryColor; color:$fontColor;}
 
 
 /* Main Content */
