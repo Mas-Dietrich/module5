@@ -345,6 +345,9 @@ header figure.logo {
   float: left;
   margin: 0 2% 0 0;
 }
+header figure {
+  float: left;
+}
 
 /* Nav Stuff */
 #navWrapper {
