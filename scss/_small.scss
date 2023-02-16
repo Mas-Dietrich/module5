@@ -1,0 +1,143 @@
+/* Prevent adjustments of font size after orientation changes. */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* Header Stuff */
+header {
+  padding: .5rem 2%;
+  background-color: $primaryColor;
+  background-color: $primaryColor;
+  color: $secondaryColor;
+
+  h1 { margin:0; font-size: 1rem;}
+  h2 { margin: 0; font-weight: $lightWeight; color: $fontColor; font-size: .75rem;}
+
+  figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+  }
+}
+
+/* Nav Stuff */
+
+#navWrapper {
+  background-color: $secondaryColor;
+}
+
+nav {
+  ul { 
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      float: left;
+      width: 25%;
+
+      a {
+        display: block;
+        color: #ffffff;
+        border-left: 1px solid #666;
+        padding: .9rem 2vw;
+        text-decoration: none;
+        font-size: .9rem;
+        text-align: center;
+      }
+    }
+  }
+  ul.open{ display: block;}
+
+  button {
+    margin: .2rem 2vw;
+    padding: .5rem;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: rgba(255,255,255,0.9)
+  }
+
+  button span:nth-child(1) {
+    display: block;
+  }
+
+  button span:nth-child(2) {
+    display: none;
+  }
+
+  button.open span:nth-child(1) {
+    display: none;
+  }
+
+  button.open span:nth-child(2) {
+    display: block;
+  }
+}
+
+
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {background-color: $primaryColor;}
+
+nav ul li.active a {background-color: #000; color:#fff;}
+
+
+/* Main Content */
+
+main {
+  padding: 0 2%;
+  min-height: 10rem;
+}
+
+main figure.heroPhoto {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  overflow: hidden;
+}
+
+main figure.myphoto {
+  width: 50%;
+  margin: 0 0 0 2%;
+  float: right;
+}
+
+main figure.myphoto img {width: 100%;}
+main figure.myphoto figcaption {text-align: center; font-size: 1rem;}
+
+picture.photoA {display: block; width: 96%; margin: 0 2%;}
+
+
+//footer
+#footerWrapper {
+    background-color: $secondaryColor;
+}
+footer {
+    padding: 0.5rem $gutter;
+    p{
+        margin: 0;
+        font-weight: $lightWeight;
+        text-align: center;
+        color: white;
+    }
+}
+
+/* Clearfix: Force an element not to collapse */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

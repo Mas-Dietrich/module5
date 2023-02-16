@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant | Mason Dietrich</title>
+    <meta name="description" content="DGM2740 Module 5">
+    <meta name="author" content="Mason Dietrich">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+
+    <!--Favicon Stuff-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+
+</head>
+<body>
+<!-- Header Stuff Here -->
+        <header class="clearfix">
+            <figure>
+                <img class="logo" src="images/logo1.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+            </figure>
+            <h1>Mason's Kitchen</h1>
+            <h2>Eating Out Never Tasted So Much Like Home</h2>
+        </header>
+<!-- Header Stuff End -->
+
+<!-- Nav Stuff Here -->
+    <div id="navWrapper" class="clearfix">
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776</span><span>x</span></button>
+            <ul id="primaryNav">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Locations</a></li>
+                <li class="active"><a href="#">Our Founder</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<!-- Nav Stuff End -->
+
+<!-- Content Stuff Here -->
+        <main class="clearfix">
+            <figure class="heroPhoto">
+                <img src="images/heroKitchen.png" sizes="100vw"
+                srcset="images/hero450.png 450w, images/hero600.png 600w, images/hero750.png 750w, images/hero900.png 900w, images/hero1050.png 1050w">
+            </figure>
+            <h2>Our Founder</h2>
+
+            <figure class="myphoto">
+                <picture class="photoA">
+                    <source media="(max-width: 300px)" srcset="images/mason300.png">
+                    <source media="(max-width: 450px)" srcset="images/mason450.png">
+                    <source media="(max-width: 600px)" srcset="images/mason600.png">
+                    <img src="images/mason600.png">
+                </picture>
+                <figcaption>Our founder</figcaption>
+            </figure>
+
+            <p> 
+                Dynamically disseminate long-term high-impact intellectual capital with extensive benefits.
+                Conveniently mesh future-proof partnerships after emerging ideas. Competently engage effective 
+                e-services with client-centered ROI. Appropriately exploit cooperative infrastructures rather than 
+                accurate technologies. Conveniently brand orthogonal services rather than cross functional sources.
+            </p>
+        </main>
+
+<!-- Content Stuff End -->
+
+<!-- Footer Stuff Here -->
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy; <span id="date"></span> &bull; Mason Dietrich &bull; DGM2740</p>
+        </footer>
+    </div>
+<!-- Footer Stuff End -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
