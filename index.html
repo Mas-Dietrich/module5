@@ -50,10 +50,14 @@
 
 <!-- Content Stuff Here -->
         <main class="clearfix">
-            <figure class="heroPhoto">
-                <img src="images/heroKitchen.png" alt="Hero Image" sizes="100vw"
-                srcset="images/hero450.png 450w, images/hero600.png 600w, images/hero750.png 750w, images/hero900.png 900w, images/hero1050.png 1050w">
-            </figure>
+            <picture class="photoA">
+                <source media="(max-width: 450px)" srcset="images/hero450.png">
+                <source media="(max-width: 600px)" srcset="images/hero600.png">
+                <source media="(max-width: 750px)" srcset="images/hero750.png">
+                <source media="(max-width: 900px)" srcset="images/hero900.png">
+                <source media="(max-width: 1050px)" srcset="images/hero1050.png">
+                <img src="images/hero1050.png">
+            </picture>
             <h2>Our Founder</h2>
 
             <figure class="myphoto">
